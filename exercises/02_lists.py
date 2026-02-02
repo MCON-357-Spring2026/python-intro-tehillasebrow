@@ -21,10 +21,5 @@ print("Print all items with loop")
 for item in favoriteFoods:
     print(item)
 print("List comprehension for the lengths of each item -")
-foodLength=[favoriteFoods.count(item) for item in favoriteFoods]
-n=0
-while n<=(len(favoriteFoods)-1):
-    food=len(favoriteFoods[n])
-    n+=1
-    foodLength.append(food)
-    print(food)
+foodLength=[len(item) for item in favoriteFoods]
+print(foodLength)
